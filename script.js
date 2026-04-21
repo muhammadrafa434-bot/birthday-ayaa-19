@@ -64,6 +64,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closingSection) {
         observer.observe(closingSection);
     }
+
+    // Music Control
+    const musicToggle = document.getElementById('music-toggle');
+    const bgMusic = document.getElementById('bg-music');
+    let isPlaying = false;
+
+    if (musicToggle && bgMusic) {
+        musicToggle.addEventListener('click', () => {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicToggle.innerHTML = '🎵 Play Music';
+                musicToggle.classList.remove('playing');
+            } else {
+                bgMusic.play();
+                musicToggle.innerHTML = '⏸️ Pause Music';
+                musicToggle.classList.add('playing');
+            }
+            isPlaying = !isPlaying;
+        });
+    }
 });
 
 // Add CSS for the stars dynamically
