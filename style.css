@@ -1,10 +1,10 @@
 :root {
-    --bg-dark: #050510;
-    --text-light: #f5f5fa;
-    --accent-glow: rgba(147, 112, 219, 0.6); /* Soft purple glow */
-    --accent-color: #d8b4e2;
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --bg-dark: #2a0a18;
+    --text-light: #fff0f5;
+    --accent-glow: rgba(255, 105, 180, 0.6); /* Hot pink glow */
+    --accent-color: #ffb6c1; /* Light pink */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.15);
 }
 
 * {
@@ -30,7 +30,7 @@ body {
     height: 100%;
     z-index: -1;
     overflow: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #4a152d 0%, #1a050f 100%);
 }
 
 .hero {
@@ -205,9 +205,9 @@ body {
 }
 
 .poem-card.highlight {
-    background: rgba(147, 112, 219, 0.1);
-    border: 1px solid rgba(147, 112, 219, 0.3);
-    box-shadow: 0 0 40px rgba(147, 112, 219, 0.2);
+    background: rgba(255, 105, 180, 0.1);
+    border: 1px solid rgba(255, 105, 180, 0.3);
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.2);
 }
 
 .poem-card.highlight .poem-text {
